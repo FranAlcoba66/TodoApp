@@ -70,7 +70,7 @@ const Todo = ({ id, title, description, completeTodo, editTodo, deleteTodo }) =>
 
 					<Form.Group controlId='description'>
 					  <Form.Label>Description</Form.Label>
-					  <Form.Control type='text' value={newDescription} onChange={e => setDescription(e.target.value)} />
+					  <Form.Control type='text'  as="textarea" rows={3}  value={newDescription} onChange={e => setDescription(e.target.value)} />
 					</Form.Group>
 				</Form>
 	        </Modal.Body>
